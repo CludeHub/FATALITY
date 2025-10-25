@@ -1,6 +1,6 @@
 # Load the Fatality with notification
 ```lua
-local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/Fatality/refs/heads/main/src/source.luau"))();
+local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/FATALITY/refs/heads/main/FATALITYSOURCE.lua"))();
 local Notification = Fatality:CreateNotifier();
 
 Fatality:Loader({
