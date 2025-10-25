@@ -4379,7 +4379,7 @@ function Fatality.new(Window: Window)
 	end
 
 	Fatalitywin.Name = "FATALITY"
-	Fatalitywin.Parent = CoreGui;
+	Fatalitywin.Parent = game.CoreGui
 	Fatalitywin.ResetOnSpawn = false;
 	Fatalitywin.IgnoreGuiInset = true;
 	Fatalitywin.ZIndexBehavior = Enum.ZIndexBehavior.Global;
