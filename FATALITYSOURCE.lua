@@ -4378,7 +4378,7 @@ function Fatality.new(Window: Window)
 		end
 	end
 
-	Fatalitywin.Name = Fatality:RandomString();
+	Fatalitywin.Name = "FATALITY"
 	Fatalitywin.Parent = CoreGui;
 	Fatalitywin.ResetOnSpawn = false;
 	Fatalitywin.IgnoreGuiInset = true;
