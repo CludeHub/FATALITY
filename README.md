@@ -1,65 +1,4 @@
-# Fatality Roblox version
-```
-local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/Fatality/refs/heads/main/src/source.luau"))();
-local Notification = Fatality:CreateNotifier();
-
-Fatality:Loader({
-	Name = "FATALITY",
-	Duration = 4
-});
-
-Notification:Notify({
-	Title = "FATALITY",
-	Content = "Hello, "..game.Players.LocalPlayer.DisplayName..' Welcome back!',
-	Icon = "clipboard"
-})
-
-local Window = Fatality.new({
-	Name = "FATALITY",
-	Expire = "never",
-});
-
-local Rage = Window:AddMenu({
-	Name = "RAGE",
-	Icon = "skull"
-})
-
-	local Weapon = Rage:AddSection({
-		Position = 'left',
-		Name = "WEAPON"
-	});
-
-Weapon:AddSlider({
-		Name = "Hit-chance",
-		Default = 61
-	})
-Weapon:AddDropdown({
-		Name = "Hitboxes",
-		Values = {"Head",'Neck','Arms','Legs'}
-	})
-local Autostop = Extra:AddToggle({
-		Name = "Autostop",
-		Option = true;
-	});
-	
-	Autostop.Option:AddToggle({
-		Name = "Something"
-	})
-	
-	Autostop.Option:AddToggle({
-		Name = "Something"
-	})
-	
-	Autostop.Option:AddToggle({
-		Name = "Something"
-	})
-	
-	Autostop.Option:AddToggle({
-		Name = "Something"
-	})
-
-```
-Example:
+# Load the Fatality with notification
 ```lua
 local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/Fatality/refs/heads/main/src/source.luau"))();
 local Notification = Fatality:CreateNotifier();
@@ -74,53 +13,37 @@ Notification:Notify({
 	Content = "Hello, "..game.Players.LocalPlayer.DisplayName..' Welcome back!',
 	Icon = "clipboard"
 })
+```
 
+# Create the Window
+```lua
 local Window = Fatality.new({
 	Name = "FATALITY",
 	Expire = "never",
 });
+```
 
+# Add Menu
+```lua
 local Rage = Window:AddMenu({
 	Name = "RAGE",
 	Icon = "skull"
 })
+```
 
-local Legit = Window:AddMenu({
-	Name = "LEGIT",
-	Icon = "target"
-})
-
-local Visual = Window:AddMenu({
-	Name = "VISUAL",
-	Icon = "eye"
-})
-
-local Misc = Window:AddMenu({
-	Name = "MISC",
-	Icon = "settings"
-})
-
-local Skins = Window:AddMenu({
-	Name = "SKINS",
-	Icon = "palette"
-})
-
-local Lua = Window:AddMenu({
-	Name = "LUA",
-	Icon = "code"
-})
-
+do
 	local Weapon = Rage:AddSection({
 		Position = 'left',
 		Name = "WEAPON"
 	});
 	
-	local Extra = Rage:AddSection({
+local Extra = Rage:AddSection({
 		Position = 'center',
 		Name = "EXTREA"
 	});
 	
-	local General = Rage:AddSection({
+	
+local General = Rage:AddSection({
 		Position = 'right',
 		Name = "GENERAL"
 	});
@@ -589,4 +512,3 @@ do
 	})
 
 end
-```
