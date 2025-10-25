@@ -1,4 +1,64 @@
 # Fatality Roblox version
+```
+local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/Fatality/refs/heads/main/src/source.luau"))();
+local Notification = Fatality:CreateNotifier();
+
+Fatality:Loader({
+	Name = "FATALITY",
+	Duration = 4
+});
+
+Notification:Notify({
+	Title = "FATALITY",
+	Content = "Hello, "..game.Players.LocalPlayer.DisplayName..' Welcome back!',
+	Icon = "clipboard"
+})
+
+local Window = Fatality.new({
+	Name = "FATALITY",
+	Expire = "never",
+});
+
+local Rage = Window:AddMenu({
+	Name = "RAGE",
+	Icon = "skull"
+})
+
+	local Weapon = Rage:AddSection({
+		Position = 'left',
+		Name = "WEAPON"
+	});
+
+Weapon:AddSlider({
+		Name = "Hit-chance",
+		Default = 61
+	})
+Weapon:AddDropdown({
+		Name = "Hitboxes",
+		Values = {"Head",'Neck','Arms','Legs'}
+	})
+local Autostop = Extra:AddToggle({
+		Name = "Autostop",
+		Option = true;
+	});
+	
+	Autostop.Option:AddToggle({
+		Name = "Something"
+	})
+	
+	Autostop.Option:AddToggle({
+		Name = "Something"
+	})
+	
+	Autostop.Option:AddToggle({
+		Name = "Something"
+	})
+	
+	Autostop.Option:AddToggle({
+		Name = "Something"
+	})
+
+```
 Example:
 ```lua
 local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/Fatality/refs/heads/main/src/source.luau"))();
@@ -50,7 +110,6 @@ local Lua = Window:AddMenu({
 	Icon = "code"
 })
 
-do
 	local Weapon = Rage:AddSection({
 		Position = 'left',
 		Name = "WEAPON"
