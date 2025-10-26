@@ -7,7 +7,6 @@
     Github: https://github.com/4lpaca-pin/Fatality
 --]]
 
-print("200")
 -- Export Types --
 export type Window = {
 	Name: string,
