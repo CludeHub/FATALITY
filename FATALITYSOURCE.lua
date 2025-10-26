@@ -4378,11 +4378,15 @@ function Fatality.new(Window: Window)
 		end
 	end
 
+	
+
 	Fatalitywin.Name = "FATALITY"
 	Fatalitywin.Parent = game.CoreGui
 	Fatalitywin.ResetOnSpawn = false;
 	Fatalitywin.IgnoreGuiInset = true;
 	Fatalitywin.ZIndexBehavior = Enum.ZIndexBehavior.Global;
+
+
 
 	table.insert(Fatality.Windows,Fatalitywin)
 
@@ -4395,9 +4399,30 @@ function Fatality.new(Window: Window)
 	FatalFrame.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
 	FatalFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	FatalFrame.BorderSizePixel = 0
-	FatalFrame.Position = UDim2.new(0.5, 0, 0.2);
+	FatalFrame.Position = UDim2.new(0.5, 0, 0.1);
 	FatalFrame.Size = Window.Scale;
 	FatalFrame.ClipsDescendants = true
+
+	local Open_7274 = Instance.new("ImageButton")
+Open_7274.Name = "Open"
+Open_7274.Size = UDim2.new(0,50,0,50)
+Open_7274.Position = UDim2.new(0,0,0,0)
+Open_7274.BackgroundColor3 = Color3.fromRGB(162,162,162)
+Open_7274.BackgroundTransparency = 1
+Open_7274.ClipsDescendants = false
+Open_7274.Active = true
+Open_7274.Selectable = true
+Open_7274.Draggable = true
+Open_7274.Image = "rbxassetid://114880451133347"
+Open_7274.ScaleType = Enum.ScaleType.Stretch
+local Corner_4369 = Instance.new("UICorner")
+Corner_4369.CornerRadius = UDim.new(1,0)
+Corner_4369.Parent = Open_7274
+Open_7274.Parent = Fatalitywin
+
+	Open_7274.MouseButton1Click:Connect(function()
+			FatalFrame.Visible = not FatalFrame.Visible
+		end)
 
 	UICorner.CornerRadius = UDim.new(0, 5)
 	UICorner.Parent = FatalFrame
