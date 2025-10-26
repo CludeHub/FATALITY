@@ -4407,7 +4407,7 @@ function Fatality.new(Window: Window)
 	local Open_7274 = Instance.new("ImageButton")
 Open_7274.Name = "Open"
 Open_7274.Size = UDim2.new(0,50,0,50)
-Open_7274.Position = UDim2.new(0,0,0,0)
+Open_7274.Position = UDim2.new(0,0,0.1,0)
 Open_7274.BackgroundColor3 = Color3.fromRGB(162,162,162)
 Open_7274.BackgroundTransparency = 1
 Open_7274.ClipsDescendants = false
