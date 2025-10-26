@@ -21,6 +21,10 @@ local Window = Fatality.new({
 	Name = "FATALITY",
 	Expire = "never",
 });
+local Config = Window:AddConfig();
+
+Config:Init("Counter-Strike 2","Fatality-Win");
+
 ```
 
 # Add Menu
@@ -176,4 +180,9 @@ end
         Callback = function(val)
 end
 	})
+```
+
+# Configs saver
+```
+Flag = "the name of the toggle" -- add this on toggles colorpickers dropdown sliders
 ```
