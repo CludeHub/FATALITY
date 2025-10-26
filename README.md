@@ -57,6 +57,7 @@ local General = Rage:AddSection({
 ```lua
 Weapon:AddSlider({
 		Name = "Hit-chance",
+        Flag = "Hit-chance",
 		Default = 61,
 		Callback = function(val)
 	end
@@ -66,42 +67,18 @@ Weapon:AddSlider({
 ```lua
 	Weapon:AddDropdown({
 		Name = "Hitboxes",
+        Flag = "Hitboxes",
 		Values = {"Head",'Neck','Arms','Legs'},
         Callback = function(val)
 end
 	})
 ```
 
-# Add Toggle
-```lua
-	Extra:AddToggle({
-		Name = "Ignore limbs on moving",
-        Callback = function(val)
-end
-	});
-```
-# Add Toggle with Option
-```lua
-	
-	local Autostop = Extra:AddToggle({
-		Name = "Aimbot",
-		Option = true;
-        Callback = function(val)
-end
-	});
-
-	Autostop.Option:AddToggle({
-		Name = "Fov Circle",
-        Callback = function(val)
-end
-	})
-```
-	
-
-# Toggle with Risky
+# Toggle
 ```lua
 	General:AddToggle({
 		Name = "Zeus bot",
+        Flag = "Zeus bot",
 		Risky = false,
         Callback = function(val)
 end
@@ -111,6 +88,7 @@ end
 ```lua
 	local NoSpread = General:AddToggle({
 		Name = "Nospread",
+        Flag = "Nospread",
 		Risky = false,
 		Option = true,
         Callback = function(val)
@@ -137,6 +115,7 @@ end
 	Aim:AddDropdown({
 		Name = "Hitboxes",
 		Multi = true,
+        Flag = "Hitboxes",
 		Default = {
 			["Head"] = true
 		},
@@ -154,11 +133,14 @@ end
 ```lua
 	General:AddToggle({
 		Name = "Visualize fov",
+        Flag = "Visualize fov",
+        Risky = false,
 		Option = true,
         Callback = function(val)
 end
 	}).Option:AddColorPicker({
 		Name = "Color",
+        Flag = "Color",
 		Default = Color3.fromRGB(255, 34, 75),
         Callback = function(val)
 end
@@ -168,6 +150,7 @@ end
 ```lua
 	pc:AddColorPicker({
 		Name = "Walls",
+        Flag = "Walls",
 		Default = Color3.fromRGB(111, 255, 0),
         Callback = function(val)
 end
@@ -177,6 +160,7 @@ end
 ```lua
 	Model:AddKeybind({
 		Name = "Toggle",
+        Flag = "Toggle",
         Callback = function(val)
 end
 	})
