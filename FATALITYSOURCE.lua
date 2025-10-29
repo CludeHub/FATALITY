@@ -2953,7 +2953,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		ColorPicker_Name.TextXAlignment = Enum.TextXAlignment.Left
 		ColorPicker_Name.ZIndex = ZIndex + 2
 
-		ValueFrame.Name = "ValueFrame"
+		ValueFrame.Name = "ColorPickerValueFrame"
 		ValueFrame.Parent = ColorPicker
 		ValueFrame.AnchorPoint = Vector2.new(1, 0.5)
 		ValueFrame.BackgroundColor3 = Config.Default
