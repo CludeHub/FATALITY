@@ -4566,8 +4566,6 @@ Open_7274.Parent = Fatalitywin
 	User_name.TextStrokeTransparency = 0.700
 	User_name.TextXAlignment = Enum.TextXAlignment.Right
 
-	-- theme
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/FATALITY/refs/heads/main/Theme.lua"))()
 	expire_days.Name = "expire_days"
 	expire_days.Parent = UserProfle
 	expire_days.AnchorPoint = Vector2.new(1, 0)
