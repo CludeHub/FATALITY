@@ -4292,7 +4292,7 @@ end
 fatalityGui.DescendantAdded:Connect(watchProperties)
 	else
 		print("Dark theme")
-	end
+	end;
 function Fatality.new(Window: Window)
 	Window = Window or {};
 	Window.Name = Window.Name or "FATALITY";
