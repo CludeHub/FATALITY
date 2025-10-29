@@ -1305,7 +1305,7 @@ function Fatality:CreateOption(OptionButton: ImageButton): Elements
 	Fatality:ScrollSignal(ScrollingFrame,UIListLayout,'Y');
 
 	ExtElementFrame.Active = true;
-	ExtElementFrame.Name = Fatality:RandomString()
+	ExtElementFrame.Name = "ExtElementFrame"
 	ExtElementFrame.Parent = OwnWindow
 	ExtElementFrame.AnchorPoint = Vector2.new(0.5, 0)
 	ExtElementFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
@@ -1322,7 +1322,7 @@ function Fatality:CreateOption(OptionButton: ImageButton): Elements
 	UIStroke.Color = Color3.fromRGB(29, 29, 29)
 	UIStroke.Parent = ExtElementFrame
 
-	DropShadow.Name = Fatality:RandomString()
+	DropShadow.Name = "DropShadow"
 	DropShadow.Parent = ExtElementFrame
 	DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
 	DropShadow.BackgroundTransparency = 1.000
@@ -1355,7 +1355,7 @@ function Fatality:CreateOption(OptionButton: ImageButton): Elements
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 	UIListLayout.Padding = UDim.new(0, 5)
 
-	SpaceBox.Name = Fatality:RandomString()
+	SpaceBox.Name = "SpaceBox"
 	SpaceBox.Parent = ScrollingFrame
 	SpaceBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	SpaceBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1671,7 +1671,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	end;
 
 	ColorPickerFrame.Active = true;
-	ColorPickerFrame.Name = Fatality:RandomString()
+	ColorPickerFrame.Name = "ColorPickerFrame"
 	ColorPickerFrame.Parent = OwnWindow
 	ColorPickerFrame.AnchorPoint = Vector2.new(0.5, 0)
 	ColorPickerFrame.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
@@ -1689,7 +1689,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UIStroke.Color = Color3.fromRGB(29, 29, 29)
 	UIStroke.Parent = ColorPickerFrame
 
-	DropShadow.Name = Fatality:RandomString()
+	DropShadow.Name = "DropShadow"
 	DropShadow.Parent = ColorPickerFrame
 	DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
 	DropShadow.BackgroundTransparency = 1.000
@@ -1704,7 +1704,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	DropShadow.ScaleType = Enum.ScaleType.Slice
 	DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
-	ColorPickBox.Name = Fatality:RandomString()
+	ColorPickBox.Name = "ColorPickBox"
 	ColorPickBox.Parent = ColorPickerFrame
 	ColorPickBox.BackgroundColor3 = Color3.fromRGB(39, 255, 35)
 	ColorPickBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1714,7 +1714,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	ColorPickBox.ZIndex = 201
 	ColorPickBox.Image = "http://www.roblox.com/asset/?id=112554223509763"
 
-	MouseMovement.Name = Fatality:RandomString()
+	MouseMovement.Name = "MouseMovement"
 	MouseMovement.Parent = ColorPickBox
 	MouseMovement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MouseMovement.BackgroundTransparency = 1.000
@@ -1732,7 +1732,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UIStroke_2.Color = Color3.fromRGB(29, 29, 29)
 	UIStroke_2.Parent = ColorPickBox
 
-	ColorRedGreenBlue.Name = Fatality:RandomString()
+	ColorRedGreenBlue.Name = "ColorRedGreenBlue"
 	ColorRedGreenBlue.Parent = ColorPickerFrame
 	ColorRedGreenBlue.AnchorPoint = Vector2.new(1, 0)
 	ColorRedGreenBlue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1749,7 +1749,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UICorner_3.CornerRadius = UDim.new(0, 3)
 	UICorner_3.Parent = ColorRedGreenBlue
 
-	ColorRGBSlide.Name = Fatality:RandomString()
+	ColorRGBSlide.Name = "ColorRGBSlide"
 	ColorRGBSlide.Parent = ColorRedGreenBlue
 	ColorRGBSlide.AnchorPoint = Vector2.new(0.5, 0)
 	ColorRGBSlide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1763,7 +1763,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UIStroke_3.Color = Color3.fromRGB(29, 29, 29)
 	UIStroke_3.Parent = ColorRGBSlide
 
-	ColorOpc.Name = Fatality:RandomString()
+	ColorOpc.Name = "Color0pc"
 	ColorOpc.Parent = ColorPickerFrame
 	ColorOpc.AnchorPoint = Vector2.new(0.5, 0)
 	ColorOpc.BackgroundColor3 = Color3.fromRGB(102, 255, 0)
@@ -1776,7 +1776,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UICorner_4.CornerRadius = UDim.new(0, 2)
 	UICorner_4.Parent = ColorOpc
 
-	ColorOptSlide.Name = Fatality:RandomString()
+	ColorOptSlide.Name = "ColorOptSlide"
 	ColorOptSlide.Parent = ColorOpc
 	ColorOptSlide.AnchorPoint = Vector2.new(0, 0.5)
 	ColorOptSlide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1796,7 +1796,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UIStroke_5.Color = Color3.fromRGB(29, 29, 29)
 	UIStroke_5.Parent = ColorOpc
 
-	ColorOpt.Name = Fatality:RandomString()
+	ColorOpt.Name = "Color0pt"
 	ColorOpt.Parent = ColorPickerFrame
 	ColorOpt.AnchorPoint = Vector2.new(0.5, 0)
 	ColorOpt.BackgroundColor3 = Color3.fromRGB(102, 255, 0)
@@ -1810,7 +1810,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UICorner_5.CornerRadius = UDim.new(0, 2)
 	UICorner_5.Parent = ColorOpt
 
-	PasteButton.Name = Fatality:RandomString()
+	PasteButton.Name = "PasteButton"
 	PasteButton.Parent = ColorOpt
 	PasteButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	PasteButton.BackgroundTransparency = 1.000
@@ -1822,7 +1822,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	PasteButton.Image = "rbxassetid://10709799288"
 	PasteButton.ImageTransparency = 0.450
 
-	CopyButton.Name = Fatality:RandomString()
+	CopyButton.Name = "CopyButton"
 	CopyButton.Parent = ColorOpt
 	CopyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	CopyButton.BackgroundTransparency = 1.000
@@ -1835,7 +1835,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	CopyButton.Image = "rbxassetid://10709798682"
 	CopyButton.ImageTransparency = 0.450
 
-	hexCode.Name = Fatality:RandomString()
+	hexCode.Name = "hexCode"
 	hexCode.Parent = ColorOpt
 	hexCode.BackgroundColor3 = Fatality.Colors.Black
 	hexCode.BackgroundTransparency = 0.400
@@ -1848,7 +1848,7 @@ function Fatality:CreateColorPicker(ColorBox: Frame,Transparency, Callback)
 	UICorner_6.CornerRadius = UDim.new(0, 4)
 	UICorner_6.Parent = hexCode
 
-	HexCodeText.Name = Fatality:RandomString()
+	HexCodeText.Name = "HexCodeText"
 	HexCodeText.Parent = hexCode
 	HexCodeText.AnchorPoint = Vector2.new(0, 0.5)
 	HexCodeText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2182,7 +2182,7 @@ function Fatality:CreateDropdown(Parent: Frame, Default: string | {[string]: boo
 
 	Toggle(false);
 
-	DropdownItemFrame.Name = Fatality:RandomString()
+	DropdownItemFrame.Name = "DropdownItemFrame"
 	DropdownItemFrame.Parent = Window
 	DropdownItemFrame.AnchorPoint = Vector2.new(0, 0)
 	DropdownItemFrame.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
@@ -2199,7 +2199,7 @@ function Fatality:CreateDropdown(Parent: Frame, Default: string | {[string]: boo
 	UIStroke.Color = Color3.fromRGB(29, 29, 29)
 	UIStroke.Parent = DropdownItemFrame
 
-	DropShadow.Name = Fatality:RandomString()
+	DropShadow.Name = "DropShadow"
 	DropShadow.Parent = DropdownItemFrame
 	DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
 	DropShadow.BackgroundTransparency = 1.000
@@ -2238,7 +2238,7 @@ function Fatality:CreateDropdown(Parent: Frame, Default: string | {[string]: boo
 	local new_button = function()
 		local db_selected = Instance.new("TextButton")
 
-		db_selected.Name = Fatality:RandomString()
+		db_selected.Name = "db_selected"
 		db_selected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		db_selected.BackgroundTransparency = 1.000
 		db_selected.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -2373,7 +2373,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 			SearchAPI.Memory(Config.Name);
 		end;
 
-		Toggle.Name = Fatality:RandomString()
+		Toggle.Name = "Toggle"
 		Toggle.Parent = Parent
 		Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Toggle.BackgroundTransparency = 1.000
@@ -2383,7 +2383,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		Toggle.ZIndex = ZIndex + 1
 		Fatality:AddDragBlacklist(Toggle);
 
-		Toggle_Name.Name = Fatality:RandomString()
+		Toggle_Name.Name = "Toggle_Name"
 		Toggle_Name.Parent = Toggle
 		Toggle_Name.AnchorPoint = Vector2.new(0, 0.5)
 		Toggle_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2401,7 +2401,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 
 		Fatality:ProtectText(Toggle_Name,Config.Name);
 
-		ValueFrame.Name = Fatality:RandomString()
+		ValueFrame.Name = "ValueFrame"
 		ValueFrame.Parent = Toggle
 		ValueFrame.AnchorPoint = Vector2.new(1, 0.5)
 		ValueFrame.BackgroundColor3 = Fatality.Colors.Black
@@ -2416,7 +2416,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = ValueFrame
 
-		ValueIcon.Name = Fatality:RandomString()
+		ValueIcon.Name = "ValueIcon"
 		ValueIcon.Parent = ValueFrame
 		ValueIcon.AnchorPoint = Vector2.new(0.5, 0.5)
 		ValueIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2429,7 +2429,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		ValueIcon.Image = "rbxassetid://10709790644"
 		ValueIcon.ImageTransparency = 1;
 
-		OptionButton.Name = Fatality:RandomString()
+		OptionButton.Name = "OptionButton"
 		OptionButton.Parent = Toggle
 		OptionButton.AnchorPoint = Vector2.new(1, 0.5)
 		OptionButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2591,7 +2591,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 			SearchAPI.Memory(Config.Name);
 		end;
 
-		Slider.Name = Fatality:RandomString()
+		Slider.Name = "Slider"
 		Slider.Parent = Parent
 		Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Slider.BackgroundTransparency = 1.000
@@ -2602,7 +2602,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 
 		Fatality:AddDragBlacklist(Slider);
 
-		Slider_Name.Name = Fatality:RandomString()
+		Slider_Name.Name = "Slider_Name"
 		Slider_Name.Parent = Slider
 		Slider_Name.AnchorPoint = Vector2.new(0, 0.5)
 		Slider_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2619,7 +2619,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		Slider_Name.TextTransparency = 0.200
 		Slider_Name.TextXAlignment = Enum.TextXAlignment.Left
 
-		ValueFrame.Name = Fatality:RandomString()
+		ValueFrame.Name = "ValueFrame"
 		ValueFrame.Parent = Slider
 		ValueFrame.AnchorPoint = Vector2.new(1, 0.5)
 		ValueFrame.BackgroundColor3 = Fatality.Colors.Black
@@ -2632,7 +2632,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = ValueFrame
 
-		OptionButton.Name = Fatality:RandomString()
+		OptionButton.Name = "OptionButton"
 		OptionButton.Parent = ValueFrame
 		OptionButton.AnchorPoint = Vector2.new(0, 0.5)
 		OptionButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2647,7 +2647,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		OptionButton.Visible = Config.Option;
 		OptionButton.ZIndex = ZIndex + 1;
 
-		boxli.Name = Fatality:RandomString()
+		boxli.Name = "boxli"
 		boxli.Parent = ValueFrame
 		boxli.BackgroundColor3 = Fatality.Colors.Main
 		boxli.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -2658,7 +2658,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		UICorner_2.CornerRadius = UDim.new(0, 2)
 		UICorner_2.Parent = boxli
 
-		ValueText.Name = Fatality:RandomString()
+		ValueText.Name = "ValueText"
 		ValueText.Parent = ValueFrame
 		ValueText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ValueText.BackgroundTransparency = 1.000
@@ -2826,7 +2826,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 			SearchAPI.Memory(Config.Name);
 		end;
 
-		Button.Name = Fatality:RandomString()
+		Button.Name = "Button"
 		Button.Parent = Parent
 		Button.BackgroundColor3 = Fatality.Colors.Black
 		Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -2835,7 +2835,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		Button.ZIndex = ZIndex + 1
 		Fatality:AddDragBlacklist(Button);
 
-		Button_Name.Name = Fatality:RandomString()
+		Button_Name.Name = "Button_Name"
 		Button_Name.Parent = Button
 		Button_Name.AnchorPoint = Vector2.new(0, 0.5)
 		Button_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2925,7 +2925,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 			SearchAPI.Memory(Config.Name);
 		end;
 
-		ColorPicker.Name = Fatality:RandomString()
+		ColorPicker.Name = "ColorPicker"
 		ColorPicker.Parent = Parent
 		ColorPicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ColorPicker.BackgroundTransparency = 1.000
@@ -2935,7 +2935,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		ColorPicker.ZIndex = ZIndex + 1
 		Fatality:AddDragBlacklist(ColorPicker);
 
-		ColorPicker_Name.Name = Fatality:RandomString()
+		ColorPicker_Name.Name = "ColorPicker_Name"
 		ColorPicker_Name.Parent = ColorPicker
 		ColorPicker_Name.AnchorPoint = Vector2.new(0, 0.5)
 		ColorPicker_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2953,7 +2953,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		ColorPicker_Name.TextXAlignment = Enum.TextXAlignment.Left
 		ColorPicker_Name.ZIndex = ZIndex + 2
 
-		ValueFrame.Name = Fatality:RandomString()
+		ValueFrame.Name = "ValueFrame"
 		ValueFrame.Parent = ColorPicker
 		ValueFrame.AnchorPoint = Vector2.new(1, 0.5)
 		ValueFrame.BackgroundColor3 = Config.Default
@@ -2966,7 +2966,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = ValueFrame
 
-		OptionButton.Name = Fatality:RandomString()
+		OptionButton.Name = "OptionButton"
 		OptionButton.Parent = ValueFrame
 		OptionButton.AnchorPoint = Vector2.new(0, 0.5)
 		OptionButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3103,7 +3103,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 			SearchAPI.Memory(Config.Name);
 		end;
 
-		Dropdown.Name = Fatality:RandomString()
+		Dropdown.Name = "Dropdown"
 		Dropdown.Parent = Parent
 		Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Dropdown.BackgroundTransparency = 1.000
@@ -3113,7 +3113,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		Dropdown.ZIndex = ZIndex + 3
 		Fatality:AddDragBlacklist(Dropdown);
 
-		Dropdown_Name.Name = Fatality:RandomString()
+		Dropdown_Name.Name = "Dropdown_Name"
 		Dropdown_Name.Parent = Dropdown
 		Dropdown_Name.AnchorPoint = Vector2.new(0, 0.5)
 		Dropdown_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3132,7 +3132,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		Dropdown_Name.ZIndex = ZIndex + 4
 		Fatality:ProtectText(Dropdown_Name,Config.Name);
 
-		ValueFrame.Name = Fatality:RandomString()
+		ValueFrame.Name = "ValueFrame"
 		ValueFrame.Parent = Dropdown
 		ValueFrame.AnchorPoint = Vector2.new(1, 0.5)
 		ValueFrame.BackgroundColor3 = Fatality.Colors.Black
@@ -3145,7 +3145,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = ValueFrame
 
-		OptionButton.Name = Fatality:RandomString()
+		OptionButton.Name = "OptionButton"
 		OptionButton.Parent = ValueFrame
 		OptionButton.AnchorPoint = Vector2.new(0, 0.5)
 		OptionButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3160,7 +3160,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		OptionButton.ZIndex = 8
 		OptionButton.Visible = Config.Option;
 
-		icon.Name = Fatality:RandomString()
+		icon.Name = "icon"
 		icon.Parent = ValueFrame
 		icon.AnchorPoint = Vector2.new(1, 0)
 		icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3173,7 +3173,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		icon.ZIndex = ZIndex + 5
 		icon.Image = "rbxassetid://10709790948"
 
-		Value_Text.Name = Fatality:RandomString()
+		Value_Text.Name = "Value_Text"
 		Value_Text.Parent = ValueFrame
 		Value_Text.AnchorPoint = Vector2.new(0, 0.5)
 		Value_Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3365,7 +3365,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 			SearchAPI.Memory(Config.Name);
 		end;
 
-		Keybind.Name = Fatality:RandomString()
+		Keybind.Name = "Keybind"
 		Keybind.Parent = Parent
 		Keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Keybind.BackgroundTransparency = 1.000
@@ -3375,7 +3375,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		Keybind.ZIndex = ZIndex + 1
 		Fatality:AddDragBlacklist(Keybind);
 
-		Keybind_Name.Name = Fatality:RandomString()
+		Keybind_Name.Name = "Keybind_Name"
 		Keybind_Name.Parent = Keybind
 		Keybind_Name.AnchorPoint = Vector2.new(0, 0.5)
 		Keybind_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3393,7 +3393,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		Keybind_Name.TextXAlignment = Enum.TextXAlignment.Left
 		Fatality:ProtectText(Keybind_Name,Config.Name);
 
-		ValueFrame.Name = Fatality:RandomString()
+		ValueFrame.Name = "ValueFrame"
 		ValueFrame.Parent = Keybind
 		ValueFrame.AnchorPoint = Vector2.new(1, 0.5)
 		ValueFrame.BackgroundColor3 = Fatality.Colors.Black
@@ -3406,7 +3406,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = ValueFrame
 
-		OptionButton.Name = Fatality:RandomString()
+		OptionButton.Name = "OptionButton"
 		OptionButton.Parent = ValueFrame
 		OptionButton.AnchorPoint = Vector2.new(0, 0.5)
 		OptionButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3420,7 +3420,7 @@ function Fatality:CreateElements(Parent : Frame , ZIndex : number , Event : Bind
 		OptionButton.ImageTransparency = 0.600
 		OptionButton.Visible = Config.Option or false;
 
-		ValueText.Name = Fatality:RandomString()
+		ValueText.Name = "ValueText"
 		ValueText.Parent = ValueFrame
 		ValueText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ValueText.BackgroundTransparency = 1.000
@@ -4394,7 +4394,7 @@ function Fatality.new(Window: Window)
 	protect_gui(Fatalitywin);
 
 	FatalFrame.Active = true;
-	FatalFrame.Name = Fatality:RandomString()
+	FatalFrame.Name = "FatalFtame"
 	FatalFrame.Parent = Fatalitywin
 	FatalFrame.AnchorPoint = Vector2.new(0.5, 0)
 	FatalFrame.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
@@ -4428,7 +4428,7 @@ Open_7274.Parent = Fatalitywin
 	UICorner.CornerRadius = UDim.new(0, 5)
 	UICorner.Parent = FatalFrame
 
-	DropShadow.Name = Fatality:RandomString()
+	DropShadow.Name = "DropShadow"
 	DropShadow.Parent = FatalFrame
 	DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
 	DropShadow.BackgroundTransparency = 1.000
@@ -4443,7 +4443,7 @@ Open_7274.Parent = Fatalitywin
 	DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 	DropShadow.Rotation = 0.001
 
-	Header.Name = Fatality:RandomString()
+	Header.Name = "Header"
 	Header.Parent = FatalFrame
 	Header.Active = true
 	Header.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
@@ -4452,7 +4452,7 @@ Open_7274.Parent = Fatalitywin
 	Header.Size = UDim2.new(1, 0, 0, 40)
 	Header.ZIndex = 2
 
-	HeaderLine.Name = Fatality:RandomString()
+	HeaderLine.Name = "HeaderLine"
 	HeaderLine.Parent = Header
 	HeaderLine.AnchorPoint = Vector2.new(0, 1)
 	HeaderLine.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
@@ -4465,7 +4465,7 @@ Open_7274.Parent = Fatalitywin
 	UICorner_2.CornerRadius = UDim.new(0, 5)
 	UICorner_2.Parent = Header
 
-	HeaderText.Name = Fatality:RandomString()
+	HeaderText.Name = "HeaderText"
 	HeaderText.Parent = Header
 	HeaderText.AnchorPoint = Vector2.new(0, 0.5)
 	HeaderText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4482,7 +4482,7 @@ Open_7274.Parent = Fatalitywin
 	HeaderText.TextStrokeColor3 = Color3.fromRGB(205, 67, 218)
 	HeaderText.TextStrokeTransparency = 0.640
 
-	MenuButtonCont.Name = Fatality:RandomString()
+	MenuButtonCont.Name = "MenuButtonCont"
 	MenuButtonCont.Parent = Header
 	MenuButtonCont.AnchorPoint = Vector2.new(0, 0.5)
 	MenuButtonCont.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4494,7 +4494,7 @@ Open_7274.Parent = Fatalitywin
 	MenuButtonCont.Size = UDim2.new(1, -275, 0.75, 0)
 	MenuButtonCont.ZIndex = 4
 
-	tbc.Name = Fatality:RandomString()
+	tbc.Name = "tbc"
 	tbc.Parent = MenuButtonCont
 	tbc.Active = true
 	tbc.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -4515,7 +4515,7 @@ Open_7274.Parent = Fatalitywin
 	UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 	UIListLayout.Padding = UDim.new(0, 4)
 
-	UserProfle.Name = Fatality:RandomString()
+	UserProfle.Name = "UserProfile"
 	UserProfle.Parent = Header
 	UserProfle.AnchorPoint = Vector2.new(1, 0.5)
 	UserProfle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4526,7 +4526,7 @@ Open_7274.Parent = Fatalitywin
 	UserProfle.Size = UDim2.new(0, 150, 0.75, 0)
 	UserProfle.ZIndex = 4
 
-	UserIcon.Name = Fatality:RandomString()
+	UserIcon.Name = "UserIcon"
 	UserIcon.Parent = UserProfle
 	UserIcon.AnchorPoint = Vector2.new(1, 0.5)
 	UserIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4546,7 +4546,7 @@ Open_7274.Parent = Fatalitywin
 	UIStroke.Transparency = 0.900
 	UIStroke.Parent = UserIcon
 
-	User_name.Name = Fatality:RandomString()
+	User_name.Name = "User_name"
 	User_name.Parent = UserProfle
 	User_name.AnchorPoint = Vector2.new(1, 0)
 	User_name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4563,7 +4563,7 @@ Open_7274.Parent = Fatalitywin
 	User_name.TextStrokeTransparency = 0.700
 	User_name.TextXAlignment = Enum.TextXAlignment.Right
 
-	expire_days.Name = Fatality:RandomString()
+	expire_days.Name = "expire_days"
 	expire_days.Parent = UserProfle
 	expire_days.AnchorPoint = Vector2.new(1, 0)
 	expire_days.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4581,7 +4581,7 @@ Open_7274.Parent = Fatalitywin
 	expire_days.TextXAlignment = Enum.TextXAlignment.Right
 	expire_days.RichText = true;
 
-	HeaderLineShadow.Name = Fatality:RandomString()
+	HeaderLineShadow.Name = "HeaderLineShadow"
 	HeaderLineShadow.Parent = Header
 	HeaderLineShadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	HeaderLineShadow.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -4595,7 +4595,7 @@ Open_7274.Parent = Fatalitywin
 	UICorner_4.CornerRadius = UDim.new(0, 5)
 	UICorner_4.Parent = HeaderLineShadow
 
-	MenuFrame.Name = Fatality:RandomString()
+	MenuFrame.Name = "MenuFrame"
 	MenuFrame.Parent = FatalFrame
 	MenuFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MenuFrame.BackgroundTransparency = 1.000
@@ -4604,7 +4604,7 @@ Open_7274.Parent = Fatalitywin
 	MenuFrame.Position = UDim2.new(0, 0, 0, 50)
 	MenuFrame.Size = UDim2.new(1, 0, 1, -82)
 
-	Bottom.Name = Fatality:RandomString()
+	Bottom.Name = "Bottom"
 	Bottom.Parent = FatalFrame
 	Bottom.Active = true
 	Bottom.AnchorPoint = Vector2.new(0, 1)
@@ -4615,7 +4615,7 @@ Open_7274.Parent = Fatalitywin
 	Bottom.Size = UDim2.new(1, 0, 0, 25)
 	Bottom.ZIndex = 2
 
-	HeaderLine_2.Name = Fatality:RandomString()
+	HeaderLine_2.Name = "HeaderLine_2"
 	HeaderLine_2.Parent = Bottom
 	HeaderLine_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 	HeaderLine_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -4626,7 +4626,7 @@ Open_7274.Parent = Fatalitywin
 	UICorner_5.CornerRadius = UDim.new(0, 4)
 	UICorner_5.Parent = Bottom
 
-	HeaderLineShadow_2.Name = Fatality:RandomString()
+	HeaderLineShadow_2.Name = "HeaderLineShadow_2"
 	HeaderLineShadow_2.Parent = Bottom
 	HeaderLineShadow_2.AnchorPoint = Vector2.new(0, 1)
 	HeaderLineShadow_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -4810,7 +4810,7 @@ Open_7274.Parent = Fatalitywin
 		local UICorner_2 = Instance.new("UICorner")
 		local menu_name = Instance.new("TextLabel")
 
-		MenuButton.Name = Fatality:RandomString()
+		MenuButton.Name = "MenuButton"
 		MenuButton.Parent = tbc;
 		MenuButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 		MenuButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -4824,7 +4824,7 @@ Open_7274.Parent = Fatalitywin
 		UIStroke.Transparency = 0.950
 		UIStroke.Parent = MenuButton
 
-		Icon.Name = Fatality:RandomString()
+		Icon.Name = "Icon"
 		Icon.Parent = MenuButton
 		Icon.AnchorPoint = Vector2.new(0, 0.5)
 		Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4842,7 +4842,7 @@ Open_7274.Parent = Fatalitywin
 		UICorner_2.CornerRadius = UDim.new(1, 0)
 		UICorner_2.Parent = Icon
 
-		menu_name.Name = Fatality:RandomString()
+		menu_name.Name = "menu_name"
 		menu_name.Parent = MenuButton
 		menu_name.AnchorPoint = Vector2.new(0, 0.5)
 		menu_name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4872,7 +4872,7 @@ Open_7274.Parent = Fatalitywin
 		local Right = Instance.new("ScrollingFrame")
 		local UIListLayout_3 = Instance.new("UIListLayout")
 
-		MenuLiber.Name = Fatality:RandomString()
+		MenuLiber.Name = "MenuLiber"
 		MenuLiber.Parent = MenuFrame
 		MenuLiber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		MenuLiber.BackgroundTransparency = 1.000
@@ -4882,7 +4882,7 @@ Open_7274.Parent = Fatalitywin
 		MenuLiber.Size = UDim2.new(1, 0, 1, 0)
 		MenuLiber.ZIndex = 7
 
-		Left.Name = Fatality:RandomString()
+		Left.Name = "Left"
 		Left.Parent = MenuLiber
 		Left.Active = true
 		Left.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -4901,7 +4901,7 @@ Open_7274.Parent = Fatalitywin
 		UIListLayout.Padding = UDim.new(0, 5)
 		UIListLayout.VerticalFlex = (Menu.AutoFill and Enum.UIFlexAlignment.Fill) or Enum.UIFlexAlignment.None;
 
-		Center.Name = Fatality:RandomString()
+		Center.Name = "Center"
 		Center.Parent = MenuLiber
 		Center.Active = true
 		Center.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -4920,7 +4920,7 @@ Open_7274.Parent = Fatalitywin
 		UIListLayout_2.Padding = UDim.new(0, 5)
 		UIListLayout_2.VerticalFlex = (Menu.AutoFill and Enum.UIFlexAlignment.Fill) or Enum.UIFlexAlignment.None;
 
-		Right.Name = Fatality:RandomString()
+		Right.Name = "Right"
 		Right.Parent = MenuLiber
 		Right.Active = true
 		Right.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -5264,7 +5264,7 @@ Open_7274.Parent = Fatalitywin
 			local SpaceBox = Instance.new("Frame")
 			local ListName = Instance.new("TextLabel")
 
-			ListBox.Name = Fatality:RandomString()
+			ListBox.Name = "ListBox"
 			ListBox.Parent = (string.lower(Config.Position) == 'left' and Left) or (string.lower(Config.Position) == 'center' and Center) or Right;
 			ListBox.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
 			ListBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -5276,7 +5276,7 @@ Open_7274.Parent = Fatalitywin
 
 			Fatality:AddDragBlacklist(ScrollingFrame);
 
-			Elements.Name = Fatality:RandomString()
+			Elements.Name = "Elements"
 			Elements.Parent = ListBox
 			Elements.AnchorPoint = Vector2.new(0.5, 1)
 			Elements.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
@@ -5293,7 +5293,7 @@ Open_7274.Parent = Fatalitywin
 			UICorner.CornerRadius = UDim.new(0, 2)
 			UICorner.Parent = Elements
 
-			SearchBox.Name = Fatality:RandomString()
+			SearchBox.Name = "Name"
 			SearchBox.Parent = Elements
 			SearchBox.BackgroundColor3 = Fatality.Colors.Black
 			SearchBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -5326,7 +5326,7 @@ Open_7274.Parent = Fatalitywin
 			UIStroke_2.Color = Color3.fromRGB(29, 29, 29)
 			UIStroke_2.Parent = SearchBox
 
-			OptionButton.Name = Fatality:RandomString()
+			OptionButton.Name = "OptionButton"
 			OptionButton.Parent = Elements
 			OptionButton.AnchorPoint = Vector2.new(1, 0)
 			OptionButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -5377,14 +5377,14 @@ Open_7274.Parent = Fatalitywin
 				ScrollingFrame.CanvasSize = UDim2.fromOffset(0,UIListLayout.AbsoluteContentSize.Y);
 			end)
 
-			SpaceBox.Name = Fatality:RandomString()
+			SpaceBox.Name = "SpaceBox"
 			SpaceBox.Parent = ScrollingFrame
 			SpaceBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			SpaceBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			SpaceBox.BorderSizePixel = 0
 			SpaceBox.Size = UDim2.new(0, 0, 0, 1)
 
-			ListName.Name = Fatality:RandomString()
+			ListName.Name = "ListName"
 			ListName.Parent = ListBox
 			ListName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			ListName.BackgroundTransparency = 1.000
@@ -5403,7 +5403,7 @@ Open_7274.Parent = Fatalitywin
 			local new_button = function()
 				local db_selected = Instance.new("TextButton")
 
-				db_selected.Name = Fatality:RandomString()
+				db_selected.Name = "db_selected"
 				db_selected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				db_selected.BackgroundTransparency = 1.000
 				db_selected.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -5736,7 +5736,7 @@ Open_7274.Parent = Fatalitywin
 				end
 			end;
 
-			Section.Name = Fatality:RandomString()
+			Section.Name = "Section"
 			Section.Parent = (string.lower(Config.Position) == 'left' and Left) or (string.lower(Config.Position) == 'center' and Center) or Right;
 			Section.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
 			Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -5744,7 +5744,7 @@ Open_7274.Parent = Fatalitywin
 			Section.ClipsDescendants = true
 			Section.Size = UDim2.new(1, 0, 0, 0)
 
-			Elements.Name = Fatality:RandomString()
+			Elements.Name = "Elements"
 			Elements.Parent = Section
 			Elements.AnchorPoint = Vector2.new(0.5, 1)
 			Elements.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
@@ -5765,14 +5765,14 @@ Open_7274.Parent = Fatalitywin
 			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 			UIListLayout.Padding = UDim.new(0, 5)
 
-			SpaceBox.Name = Fatality:RandomString()
+			SpaceBox.Name = "SpaceBox"
 			SpaceBox.Parent = Elements
 			SpaceBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			SpaceBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			SpaceBox.BorderSizePixel = 0
 			SpaceBox.Size = UDim2.new(0, 0, 0, 10)
 
-			SectionName.Name = Fatality:RandomString()
+			SectionName.Name = "SectionName"
 			SectionName.Parent = Section
 			SectionName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			SectionName.BackgroundTransparency = 1.000
@@ -5820,7 +5820,7 @@ Open_7274.Parent = Fatalitywin
 	end;
 
 	do
-		InfoButton.Name = Fatality:RandomString()
+		InfoButton.Name = "InfoButton"
 		InfoButton.Parent = Bottom
 		InfoButton.AnchorPoint = Vector2.new(1, 0.5)
 		InfoButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -5833,7 +5833,7 @@ Open_7274.Parent = Fatalitywin
 		InfoButton.Image = "rbxassetid://10723415903"
 		InfoButton.ImageTransparency = 0.500
 
-		SearchButton.Name = Fatality:RandomString()
+		SearchButton.Name = "SearchButton"
 		SearchButton.Parent = Bottom
 		SearchButton.AnchorPoint = Vector2.new(0, 0.5)
 		SearchButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -5846,7 +5846,7 @@ Open_7274.Parent = Fatalitywin
 		SearchButton.Image = "rbxassetid://10734943674"
 		SearchButton.ImageTransparency = 0.500
 
-		SaveButton.Name = Fatality:RandomString()
+		SaveButton.Name = "SaveButton"
 		SaveButton.Parent = Bottom
 		SaveButton.AnchorPoint = Vector2.new(0, 0.5)
 		SaveButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -5975,7 +5975,7 @@ Open_7274.Parent = Fatalitywin
 			end;
 		end;
 
-		SearchFrame.Name = Fatality:RandomString()
+		SearchFrame.Name = "SearchFrame"
 		SearchFrame.Parent = Fatalitywin;
 		SearchFrame.AnchorPoint = Vector2.new(0, 1)
 		SearchFrame.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
@@ -5992,7 +5992,7 @@ Open_7274.Parent = Fatalitywin
 		UICorner.CornerRadius = UDim.new(0, 2)
 		UICorner.Parent = SearchFrame
 
-		DropShadow.Name = Fatality:RandomString()
+		DropShadow.Name = "DropShadow"
 		DropShadow.Parent = SearchFrame
 		DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
 		DropShadow.BackgroundTransparency = 1.000
@@ -6007,7 +6007,7 @@ Open_7274.Parent = Fatalitywin
 		DropShadow.ScaleType = Enum.ScaleType.Slice
 		DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
-		SearchBox.Name = Fatality:RandomString()
+		SearchBox.Name = "SearchBox"
 		SearchBox.Parent = SearchFrame
 		SearchBox.AnchorPoint = Vector2.new(0.5, 0)
 		SearchBox.BackgroundColor3 = Fatality.Colors.Black
@@ -6084,7 +6084,7 @@ Open_7274.Parent = Fatalitywin
 			local FeatureName = Instance.new("TextLabel")
 			local FeaturePath = Instance.new("TextLabel")
 
-			ResultFrame.Name = Fatality:RandomString()
+			ResultFrame.Name = "ResultFrame"
 			ResultFrame.Parent = ScrollingFrame;
 			ResultFrame.BackgroundColor3 = Fatality.Colors.Black
 			ResultFrame.BackgroundTransparency = 1.000
@@ -6096,7 +6096,7 @@ Open_7274.Parent = Fatalitywin
 			UICorner.CornerRadius = UDim.new(0, 4)
 			UICorner.Parent = ResultFrame
 
-			FeatureName.Name = Fatality:RandomString()
+			FeatureName.Name = "FeatureName"
 			FeatureName.Parent = ResultFrame
 			FeatureName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			FeatureName.BackgroundTransparency = 1.000
@@ -6111,7 +6111,7 @@ Open_7274.Parent = Fatalitywin
 			FeatureName.TextSize = 14.000
 			FeatureName.TextXAlignment = Enum.TextXAlignment.Left
 
-			FeaturePath.Name = Fatality:RandomString()
+			FeaturePath.Name = "FeaturePath"
 			FeaturePath.Parent = ResultFrame
 			FeaturePath.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			FeaturePath.BackgroundTransparency = 1.000
@@ -6235,7 +6235,7 @@ Open_7274.Parent = Fatalitywin
 		local corner_2 = Instance.new("UICorner")
 		local _5 = Instance.new("Frame")
 
-		backpack.Name = "FATALITY"..Fatality:RandomString();
+		backpack.Name = "FATALITY"
 		backpack.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		backpack.BackgroundTransparency = 1.000
 		backpack.BorderSizePixel = 0
@@ -6383,12 +6383,12 @@ function Fatality:Loader(Config: Loader)
 	local UIListLayout = Instance.new("UIListLayout")
 	local BlackFrame = Instance.new("Frame")
 
-	Loader.Name = Fatality:RandomString()
+	Loader.Name = "Loader"
 	Loader.Parent = CoreGui
 	Loader.IgnoreGuiInset = true
 	Loader.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
-	center.Name = Fatality:RandomString()
+	center.Name = "center"
 	center.Parent = Loader
 	center.AnchorPoint = Vector2.new(0.5, 0.5)
 	center.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6397,7 +6397,7 @@ function Fatality:Loader(Config: Loader)
 	center.BorderSizePixel = 0
 	center.Position = UDim2.new(0.5, 0, 0.5, 0)
 
-	texts.Name = Fatality:RandomString()
+	texts.Name = "Texts"
 	texts.Parent = Loader
 	texts.AnchorPoint = Vector2.new(0.5, 0.5)
 	texts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6414,7 +6414,7 @@ function Fatality:Loader(Config: Loader)
 	UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 	UIListLayout.Padding = UDim.new(0, Config.Scale * 5)
 
-	BlackFrame.Name = Fatality:RandomString()
+	BlackFrame.Name = "BlackFrame"
 	BlackFrame.Parent = Loader
 	BlackFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	BlackFrame.BackgroundTransparency = 1
@@ -6445,7 +6445,7 @@ function Fatality:Loader(Config: Loader)
 		local UIGradient = Instance.new("UIGradient")
 		local UIScale = Instance.new("UIScale")
 
-		LIT.Name = Fatality:RandomString()
+		LIT.Name = "LIT"
 		LIT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		LIT.BackgroundTransparency = 1.000
 		LIT.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -6453,7 +6453,7 @@ function Fatality:Loader(Config: Loader)
 		LIT.Size = UDim2.new(0, 56, 0, 100)
 		LIT.ZIndex = 8
 
-		ASCII.Name = Fatality:RandomString()
+		ASCII.Name = "ASCII"
 		ASCII.Parent = LIT
 		ASCII.AnchorPoint = Vector2.new(0.5, 0.5)
 		ASCII.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6510,7 +6510,7 @@ function Fatality:Loader(Config: Loader)
 		local UIGradient = Instance.new("UIGradient")
 		local UIScale = Instance.new("UIScale")
 
-		StartText.Name = Fatality:RandomString()
+		StartText.Name = "StartText"
 		StartText.Parent = Loader
 		StartText.AnchorPoint = Vector2.new(0.5, 0.5)
 		StartText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6597,13 +6597,13 @@ function Fatality:CreateNotifier(): Notifier
 	local layout = Instance.new("Frame")
 	local UIListLayout = Instance.new("UIListLayout")
 
-	Notify.Name = Fatality:RandomString();
+	Notify.Name = "Notify"
 	Notify.Parent = CoreGui
 	Notify.ResetOnSpawn = false
 	Notify.ZIndexBehavior = Enum.ZIndexBehavior.Global
 	Notify.IgnoreGuiInset = true;
 
-	layout.Name = Fatality:RandomString();
+	layout.Name = "Layout"
 	layout.Parent = Notify
 	layout.AnchorPoint = Vector2.new(1, 0)
 	layout.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6633,7 +6633,7 @@ function Fatality:CreateNotifier(): Notifier
 			local HeaderText = Instance.new("TextLabel")
 			local BodyText = Instance.new("TextLabel")
 
-			notify.Name = Fatality:RandomString()
+			notify.Name = "notify"
 			notify.Parent = layout
 			notify.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
 			notify.BackgroundTransparency = 1.000
@@ -6641,7 +6641,7 @@ function Fatality:CreateNotifier(): Notifier
 			notify.BorderSizePixel = 0
 			notify.Size = UDim2.new(0, 0, 0, 0)
 
-			notify_block.Name = Fatality:RandomString()
+			notify_block.Name = "notify_block"
 			notify_block.Parent = notify
 			notify_block.AnchorPoint = Vector2.new(0.5, 0)
 			notify_block.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
@@ -6660,7 +6660,7 @@ function Fatality:CreateNotifier(): Notifier
 			UIStroke.Transparency = 1
 			UIStroke.Parent = notify_block
 
-			Icon.Name = Fatality:RandomString()
+			Icon.Name = "Icon"
 			Icon.Parent = notify_block
 			Icon.BackgroundColor3 = Fatality.Colors.Main
 			Icon.BackgroundTransparency = 1.000
@@ -6673,7 +6673,7 @@ function Fatality:CreateNotifier(): Notifier
 			Icon.ImageTransparency = 1
 			Icon.ZIndex = 55
 
-			HeaderText.Name = Fatality:RandomString()
+			HeaderText.Name = "HeaderText"
 			HeaderText.Parent = notify_block
 			HeaderText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			HeaderText.BackgroundTransparency = 1.000
@@ -6689,7 +6689,7 @@ function Fatality:CreateNotifier(): Notifier
 			HeaderText.TextTransparency = 1
 			HeaderText.TextXAlignment = Enum.TextXAlignment.Left
 
-			BodyText.Name = Fatality:RandomString()
+			BodyText.Name = "BodyText"
 			BodyText.Parent = notify_block
 			BodyText.AnchorPoint = Vector2.new(0, 1)
 			BodyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
