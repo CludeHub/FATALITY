@@ -1,5 +1,6 @@
 # Load the Fatality with notification
 ```lua
+local Theme = loadstring(game:HttpGet("https://raw.githubsercontent.com/CludeHub/FATALITY/refs/heads/main/Theme.lua"))()
 local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/FATALITY/refs/heads/main/FATALITYSOURCE.lua"))();
 local Notification = Fatality:CreateNotifier();
 
@@ -21,6 +22,7 @@ local Window = Fatality.new({
 	Name = "FATALITY",
 	Expire = "never",
 });
+Theme:ApplyTheme("Purple")
 local Config = Window:AddConfig();
 
 Config:Init("Counter-Strike 2","Fatality-Win");
