@@ -1,14 +1,14 @@
 local Theme = {}
 
--- Store current theme
+
 Theme.CurrentTheme = nil
 
 function Theme:ApplyTheme(co)
     if not co then return end
-    co = co:lower() -- case-insensitive
+    co = co:lower() 
 
     if co == "purple" then
-        -- Define all colors
+        
         local colors = {
             FatalFtame = Color3.fromRGB(20, 14, 49),
             DropShadow = Color3.fromRGB(163, 162, 165),
@@ -43,7 +43,7 @@ function Theme:ApplyTheme(co)
             return
         end
 
-        -- Update object color safely
+        
         local function updateColor(obj)
             local color = colors[obj.Name]
             if not color then return end
@@ -64,7 +64,7 @@ function Theme:ApplyTheme(co)
             end)
         end
 
-        -- Apply colors recursively
+        
         local function applyColorsRecursively(parent)
             for _, obj in ipairs(parent:GetDescendants()) do
                 updateColor(obj)
@@ -72,7 +72,7 @@ function Theme:ApplyTheme(co)
             updateColor(parent)
         end
 
-        -- Watch property changes for auto-correct
+        
         local function watchProperties(obj)
             local props = {}
             if obj:IsA("Frame") or obj:IsA("ScrollingFrame") or obj:IsA("TextBox") then table.insert(props, "BackgroundColor3") end
@@ -87,10 +87,10 @@ function Theme:ApplyTheme(co)
             end
         end
 
-        -- Initial application
+    
         applyColorsRecursively(fatalityGui)
 
-        -- Watch existing and future objects
+        
         for _, obj in ipairs(fatalityGui:GetDescendants()) do
             watchProperties(obj)
         end
