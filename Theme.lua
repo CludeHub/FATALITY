@@ -37,11 +37,9 @@ function Theme:ApplyTheme(co)
             ValueFrame = Color3.fromRGB(20, 14, 49),
             OptionButton = Color3.fromRGB(255, 255, 255),
             boxli = Color3.fromRGB(245, 49, 116),
-            ValueText = Color3.fromRGB(255, 255, 255),
             Dropdown = Color3.fromRGB(255, 255, 255),
             Dropdown_Name = Color3.fromRGB(255, 255, 255),
             icon = Color3.fromRGB(255, 255, 255),
-            Value_Text = Color3.fromRGB(255, 255, 255),
             Toggle = Color3.fromRGB(255, 255, 255),
             Toggle_Name = Color3.fromRGB(255, 255, 255),
             Button = Color3.fromRGB(245, 49, 116),
@@ -69,10 +67,7 @@ function Theme:ApplyTheme(co)
             db_selected = Color3.fromRGB(255, 255, 255),
             ExtElementFrame = Color3.fromRGB(33, 27, 61),
             ColorPickerFrame = Color3.fromRGB(20, 14, 49),
-            Color0pc = Color3.fromRGB(102, 255, 0),
-            Color0pt = Color3.fromRGB(102, 255, 0),
             hexCode = Color3.fromRGB(20, 14, 49),
-            HexCodeText = Color3.fromRGB(255, 255, 255)
         }
 
         local fatalityGui = game.CoreGui:FindFirstChild("FATALITY")
