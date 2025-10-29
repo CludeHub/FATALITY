@@ -3725,6 +3725,7 @@ function Fatality:CreateConfigWindow(Root: ScreenGui , Fatal , Button: ImageButt
 	DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
 	ScrollingFrame.Parent = ConfigWindowFrame
+	ScrollingFrame.Name = "Box"
 	ScrollingFrame.Active = true
 	ScrollingFrame.BackgroundColor3 = Fatality.Colors.Black
 	ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
