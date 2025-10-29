@@ -1,5 +1,5 @@
 local Theme = {    
-function ApplyTheme(co)    
+function Theme:ApplyTheme(co)    
 if co == "Purple" or co == "purple" then    
 local colors = {    
 FatalFtame = Color3.fromRGB(20, 14, 49),    
