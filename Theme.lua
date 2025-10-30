@@ -21,7 +21,7 @@ function Theme:ApplyTheme(co)
             Elements = Color3.fromRGB(23, 17, 51),
             ValueFrame = Color3.fromRGB(15, 9, 44),
             boxli = Color3.fromRGB(245, 49, 116),
-            Button = Color3.fromRGB(29, 19, 40),
+            Button = Color3.fromRGB(15, 9, 44),
             Bottom = Color3.fromRGB(23, 17, 51),
             HeaderLine_2 = Color3.fromRGB(40, 34, 68),
             HeaderLineShadow_2 = Color3.fromRGB(0, 0, 0),
