@@ -100,6 +100,37 @@ function Theme:ApplyTheme(co)
         end)
 
         Theme.CurrentTheme = co
+        local frame = game:GetService("CoreGui"):WaitForChild("FATALITY"):WaitForChild("FatalFtame")
+
+-- Black → White → Black gradient with middle at 0.6
+local colorSequence = ColorSequence.new({
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(128, 25, 52)),       -- start black
+	ColorSequenceKeypoint.new(0.3, Color3.fromRGB(255, 254, 254)), -- middle white
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 254, 254))        -- end black
+})
+
+-- Function to add gradient
+local function applyGradientToFrame(buttonFrame)
+	if buttonFrame:FindFirstChild("UIGradient") then return end
+	local gradient = Instance.new("UIGradient")
+	gradient.Color = colorSequence
+	gradient.Rotation = -90
+	gradient.Parent = buttonFrame
+end
+
+-- Apply to all Frames named "Button"
+for _, descendant in ipairs(frame:GetDescendants()) do
+	if descendant:IsA("Frame") and descendant.Name == "Button" then
+		applyGradientToFrame(descendant)
+	end
+end
+
+-- Automatically apply to new "Button" Frames
+frame.DescendantAdded:Connect(function(desc)
+	if desc:IsA("Frame") and desc.Name == "Button" then
+		applyGradientToFrame(desc)
+	end
+end)
     else
         print("Theme not recognized!")
     end
