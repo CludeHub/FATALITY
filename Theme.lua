@@ -14,7 +14,7 @@ function Theme:ApplyTheme(co)
             DropShadow = Color3.fromRGB(163, 162, 165),
             Header = Color3.fromRGB(23, 17, 51),
             HeaderLine = Color3.fromRGB(40, 34, 68),
-            MenuButton = Color3.fromRGB(43, 37, 71),
+            MenuButton = Color3.fromRGB(23, 17, 51),
             TextButton = Color3.fromRGB(163, 162, 165),
             HeaderLineShadow = Color3.fromRGB(0, 0, 0),
             Section = Color3.fromRGB(23, 17, 51),
