@@ -10,19 +10,19 @@ function Theme:ApplyTheme(co)
     if co == "purple" then
         
         local colors = {
-            FatalFtame = Color3.fromRGB(20, 14, 49),
+            FatalFtame = Color3.fromRGB(13, 10, 30),
             DropShadow = Color3.fromRGB(163, 162, 165),
-            Header = Color3.fromRGB(23, 17, 51),
+            Header = Color3.fromRGB(10, 10, 35),
             HeaderLine = Color3.fromRGB(40, 34, 68),
             MenuButton = Color3.fromRGB(43, 37, 71),
             TextButton = Color3.fromRGB(163, 162, 165),
             HeaderLineShadow = Color3.fromRGB(0, 0, 0),
             Section = Color3.fromRGB(33, 27, 61),
-            Elements = Color3.fromRGB(23, 17, 51),
+            Elements = Color3.fromRGB(10, 10, 35),
             ValueFrame = Color3.fromRGB(15, 9, 44),
             boxli = Color3.fromRGB(245, 49, 116),
             Button = Color3.fromRGB(15, 9, 44),
-            Bottom = Color3.fromRGB(23, 17, 51),
+            Bottom = Color3.fromRGB(10, 10, 35),
             HeaderLine_2 = Color3.fromRGB(40, 34, 68),
             HeaderLineShadow_2 = Color3.fromRGB(0, 0, 0),
             Open = Color3.fromRGB(162, 162, 162),
