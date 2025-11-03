@@ -10,7 +10,7 @@ function Theme:ApplyTheme(co)
     if co == "purple" then
         
         local colors = {
-            FatalFtame = Color3.fromRGB(20, 14, 49),
+            FatalFtame = Color3.fromRGB(20, 14, 30),
             DropShadow = Color3.fromRGB(163, 162, 165),
             Header = Color3.fromRGB(23, 17, 51),
             HeaderLine = Color3.fromRGB(40, 34, 68),
