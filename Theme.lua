@@ -35,6 +35,7 @@ function Theme:ApplyTheme(co)
             ExtElementFrame = Color3.fromRGB(33, 27, 61),
             ColorPickerFrame = Color3.fromRGB(20, 14, 49),
             hexCode = Color3.fromRGB(20, 14, 49),
+            UIStroke = Color3.fromRGB(47, 42, 73),
         }
 
         local fatalityGui = game.CoreGui:FindFirstChild("FATALITY")
