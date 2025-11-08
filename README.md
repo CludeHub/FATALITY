@@ -253,4 +253,100 @@ Fatality (Main Loader)
 
 ---
 
+# Menu theme changer dropdown
+```lua
+local originalColors = {}
+
+Menu:AddDropdown({
+	Name = "Menu theme",
+	Flag = "Menu theme",
+	Values = {"Dark", "Purple"},
+	Callback = function(value)
+		local fatalityGui = game.CoreGui:FindFirstChild("FATALITY")
+		if not fatalityGui then
+			warn("Fatality GUI not found!")
+			return
+		end
+
+		if value == "Purple" then
+			local colors = {
+				FatalFtame = Color3.fromRGB(20, 14, 40),
+				DropShadow = Color3.fromRGB(163, 162, 165),
+				Header = Color3.fromRGB(23, 17, 51),
+				HeaderLine = Color3.fromRGB(40, 34, 68),
+				MenuButton = Color3.fromRGB(23, 17, 51),
+				TextButton = Color3.fromRGB(163, 162, 165),
+				HeaderLineShadow = Color3.fromRGB(0, 0, 0),
+				Section = Color3.fromRGB(23, 17, 51),
+				Elements = Color3.fromRGB(23, 17, 51),
+				ValueFrame = Color3.fromRGB(15, 9, 44),
+				boxli = Color3.fromRGB(245, 49, 116),
+				Button = Color3.fromRGB(15, 9, 44),
+				Bottom = Color3.fromRGB(23, 17, 51),
+				HeaderLine_2 = Color3.fromRGB(40, 34, 68),
+				HeaderLineShadow_2 = Color3.fromRGB(0, 0, 0),
+				Open = Color3.fromRGB(162, 162, 162),
+				SearchFrame = Color3.fromRGB(33, 27, 61),
+				SearchBox = Color3.fromRGB(23, 17, 51),
+				ConfigWindowFrame = Color3.fromRGB(23, 17, 51),
+				Box = Color3.fromRGB(23, 17, 51),
+				InputFrame = Color3.fromRGB(23, 17, 51),
+				DropdownItemFrame = Color3.fromRGB(20, 14, 49),
+				ExtElementFrame = Color3.fromRGB(33, 27, 61),
+				ColorPickerFrame = Color3.fromRGB(20, 14, 49),
+				hexCode = Color3.fromRGB(20, 14, 49),
+				UIStroke = Color3.fromRGB(47, 42, 73),
+			}
+
+			for _, obj in ipairs(fatalityGui:GetDescendants()) do
+				local color = colors[obj.Name]
+				if color then
+					-- save original before change
+					if not originalColors[obj] then
+						if obj:IsA("Frame") or obj:IsA("ScrollingFrame") or obj:IsA("TextBox") then
+							originalColors[obj] = obj.BackgroundColor3
+						elseif obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
+							originalColors[obj] = obj.TextColor3
+						elseif obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
+							originalColors[obj] = obj.ImageColor3
+						elseif obj:IsA("UIStroke") then
+							originalColors[obj] = obj.Color
+						end
+					end
+					-- apply purple
+					pcall(function()
+						if obj:IsA("Frame") or obj:IsA("ScrollingFrame") or obj:IsA("TextBox") then
+							obj.BackgroundColor3 = color
+						elseif obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
+							obj.TextColor3 = color
+						elseif obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
+							obj.ImageColor3 = color
+						elseif obj:IsA("UIStroke") then
+							obj.Color = color
+						end
+					end)
+				end
+			end
+		else
+			-- DARK: restore original colors
+			for obj, color in pairs(originalColors) do
+				if obj and obj.Parent then
+					pcall(function()
+						if obj:IsA("Frame") or obj:IsA("ScrollingFrame") or obj:IsA("TextBox") then
+							obj.BackgroundColor3 = color
+						elseif obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
+							obj.TextColor3 = color
+						elseif obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
+							obj.ImageColor3 = color
+						elseif obj:IsA("UIStroke") then
+							obj.Color = color
+						end
+					end)
+				end
+			end
+		end
+	end
+})
+```
+
 ✨ **Made by others edited by CludeHubs — Fatality Framework**
