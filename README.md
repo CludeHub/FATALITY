@@ -8,7 +8,7 @@ This framework allows you to easily build custom GUIs with menus, sliders, toggl
 ## 🚀 Loading the Library
 
 ```lua
-local Theme = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/FATALITY/refs/heads/main/Theme.lua"))()
+
 local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/FATALITY/refs/heads/main/FATALITYSOURCE.lua"))()
 local Notification = Fatality:CreateNotifier()
 
@@ -33,8 +33,6 @@ local Window = Fatality.new({
 	Name = "FATALITY",
 	Expire = "never",
 })
-
-Theme:ApplyTheme("Purple")
 
 local Config = Window:AddConfig()
 Config:Init("Counter-Strike 2", "Fatality-Win")
