@@ -277,7 +277,7 @@ Menu:AddDropdown({
 				MenuButton = Color3.fromRGB(23, 17, 51),
 				TextButton = Color3.fromRGB(163, 162, 165),
 				HeaderLineShadow = Color3.fromRGB(0, 0, 0),
-				Section = Color3.fromRGB(23, 17, 51),
+				Section = Color3.fromRGB(20, 14, 40),
 				Elements = Color3.fromRGB(23, 17, 51),
 				ValueFrame = Color3.fromRGB(15, 9, 44),
 				boxli = Color3.fromRGB(245, 49, 116),
