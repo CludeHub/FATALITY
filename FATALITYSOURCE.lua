@@ -4403,7 +4403,7 @@ if existingGui then
 	FatalFrame.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
 	FatalFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	FatalFrame.BorderSizePixel = 0
-	FatalFrame.Position = UDim2.new((0.5, -119, 0.100000001, 2)
+	FatalFrame.Position = UDim2.new(0.5, -119, 0.100000001, 2);
 	FatalFrame.Size = Window.Scale;
 	FatalFrame.ClipsDescendants = true
 
