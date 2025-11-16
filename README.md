@@ -293,7 +293,7 @@ Menu:AddDropdown({
 				ExtElementFrame = Color3.fromRGB(33, 27, 61),
 				ColorPickerFrame = Color3.fromRGB(20, 14, 49),
 				hexCode = Color3.fromRGB(20, 14, 49),
-				UIStroke = Color3.fromRGB(47, 42, 73),
+				UIStroke = Color3.fromRGB(32, 27, 62),
 			}
 
 			for _, obj in ipairs(fatalityGui:GetDescendants()) do
