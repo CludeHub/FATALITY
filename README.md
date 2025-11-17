@@ -255,10 +255,9 @@ Fatality (Main Loader)
 ```lua
 local originalColors = {}
 
-Menu:AddDropdown({
-	Name = "Menu theme",
-	Flag = "Menu theme",
-	Values = {"Dark", "Purple"},
+MENU:AddDropdown({
+	Name = "Theme",
+	Values = {"Default", "Purple"},
 	Callback = function(value)
 		local fatalityGui = game.CoreGui:FindFirstChild("FATALITY")
 		if not fatalityGui then
@@ -276,7 +275,7 @@ Menu:AddDropdown({
 				TextButton = Color3.fromRGB(163, 162, 165),
 				HeaderLineShadow = Color3.fromRGB(0, 0, 0),
 				Section = Color3.fromRGB(20, 14, 40),
-				Elements = Color3.fromRGB(25, 19, 53),
+				Elements = Color3.fromRGB(27, 21, 55),
 				ValueFrame = Color3.fromRGB(15, 9, 44),
 				boxli = Color3.fromRGB(245, 49, 116),
 				Button = Color3.fromRGB(15, 9, 44),
@@ -293,7 +292,7 @@ Menu:AddDropdown({
 				ExtElementFrame = Color3.fromRGB(33, 27, 61),
 				ColorPickerFrame = Color3.fromRGB(20, 14, 49),
 				hexCode = Color3.fromRGB(20, 14, 49),
-				UIStroke = Color3.fromRGB(32, 27, 62),
+				UIStroke = Color3.fromRGB(35, 30, 65),
 			}
 
 			for _, obj in ipairs(fatalityGui:GetDescendants()) do
