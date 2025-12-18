@@ -4410,7 +4410,7 @@ if existingGui then
 
 	local AspectRatio = Instance.new("UIAspectRatioConstraint")
 AspectRatio.AspectRatio = 1.600000023841858
-AspectRatio.Parent = FatalityFrame
+AspectRatio.Parent = FatalFrame
 
 	local Open_7274 = Instance.new("ImageButton")
 Open_7274.Name = "Open"
