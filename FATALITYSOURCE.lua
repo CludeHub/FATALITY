@@ -4139,7 +4139,7 @@ end;
 function Fatality.new(Window: Window)
 	Window = Window or {};
 	Window.Name = Window.Name or "FATALITY";
-	Window.Scale = Window.Scale or UDim2.new(0, 750, 0, 500);
+	Window.Scale = Window.Scale or UDim2.new(0.630000234, 0, 0.810002625, 0)
 	Window.Keybind = Window.Keybind or "Insert";
 	Window.Expire = Window.Expire or "never";
 
@@ -4390,6 +4390,7 @@ if existingGui then
 	Fatalitywin.IgnoreGuiInset = true;
 	Fatalitywin.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 
+	
 
 
 	table.insert(Fatality.Windows,Fatalitywin)
@@ -4406,6 +4407,10 @@ if existingGui then
 	FatalFrame.Position = UDim2.new(0.5, -119, 0.100000001, 2);
 	FatalFrame.Size = Window.Scale;
 	FatalFrame.ClipsDescendants = true
+
+	local AspectRatio = Instance.new("UIAspectRatioConstraint")
+AspectRatio.AspectRatio = 1.600000023841858
+AspectRatio.Parent = FatalityFrame
 
 	local Open_7274 = Instance.new("ImageButton")
 Open_7274.Name = "Open"
