@@ -4140,7 +4140,7 @@ end;
 function Fatality.new(Window: Window)
 	Window = Window or {};
 	Window.Name = Window.Name or "FATALITY";
-	Window.Scale = Window.Scale or UDim2.new(0.645999908, 0, 0.880026162, 0)
+	Window.Scale = Window.Scale or UDim2.new(0, 800, 0, 500)
 	Window.Keybind = Window.Keybind or "Insert";
 	Window.Expire = Window.Expire or "never";
 
